@@ -37,7 +37,7 @@ STORAGES = {
 
 DATABASES = {
     'default': dj_database_url.config(
-        os.environ['DATABASE_URL'],
+        os.environ.get('DATABASE_URL'),
         conn_max_age=600
     )
 }
