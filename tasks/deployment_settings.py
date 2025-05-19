@@ -37,6 +37,7 @@ STORAGES = {
 
 DATABASES = {
     'default': dj_database_url.config(
+        engine='django.db.backends.postgresql'
         os.environ['DATABASE_URL'],
         conn_max_age=600
     )
